@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiman Imran — Front-End Developer</title>
+  <meta name="description" content="Aiman Imran is a Front-End Developer from Karachi specialising in responsive, modern web interfaces built with HTML, CSS, JavaScript and React." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header>
+    <nav id="navbar">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-dot"></span>Aiman
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#certificates">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="Aiman_Resume1.docx" class="nav-cta" download>
+        Download CV <i class="fas fa-arrow-down"></i>
+      </a>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-bg-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>Open to opportunities
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-line">Hi, I'm</span>
+        <span class="name-big">Aiman</span>
+        <span class="name-big accent">Imran.</span>
+      </h1>
+
+      <h2 class="hero-role">
+        <span id="typing"></span><span class="cursor-blink">|</span>
+      </h2>
+
+      <p class="hero-desc">
+        I build responsive, modern, and accessible web experiences with clean code and thoughtful design.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/aiman-imran-28b1a228b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/aimanimran2508-bot" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/aiman_fs0/" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:aimanimran2508@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="photo-frame">
+        <div class="photo-ring"></div>
+        <img src="img3.png" alt="Aiman Imran — Front-End Developer" class="hero-photo" />
+        <div class="photo-badge">
+          <i class="fas fa-code"></i>
+          <span>Front-End Dev</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <div class="section-label">01 / About</div>
+
+    <div class="about-grid">
+      <div class="about-text-col">
+        <h2 class="section-heading">Building the web, <em>one pixel</em> at a time.</h2>
+
+        <p>
+          I’m a Computer Science student at Benazir Bhutto Shaheed University and a certified Front-End Developer from Aptech Education. I focus on building responsive websites that look clean, load fast, and work smoothly on every device.
+        </p>
+        <p>
+          My main tools are HTML5, CSS3, JavaScript, React.js, Bootstrap, and Tailwind CSS. I care about accessibility, performance, and turning UI ideas into practical, user-friendly interfaces.
+        </p>
+        <p>
+          Outside of coding, I enjoy learning new design trends, improving my frontend skills, and creating projects that help me grow as a developer.
+        </p>
+
+        <div class="about-chips">
+          <span>Karachi, PK</span>
+          <span>BCS Student</span>
+          <span>Available for Freelance</span>
+          <span>React.js Learner</span>
+        </div>
+      </div>
+
+      <div class="about-stats-col">
+        <div class="stat-pill">
+          <span class="stat-num counter" data-target="10">0</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-num counter" data-target="8">0</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-num counter" data-target="3">0</span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+        <div class="stat-pill">
+          <span class="stat-num counter" data-target="3">0</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <div class="section-label">02 / Skills</div>
+    <h2 class="section-heading">What I work with</h2>
+
+    <div class="skills-categories">
+      <div class="skill-category">
+        <h3 class="category-title">Core Languages</h3>
+        <div class="skill-tags">
+          <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+          <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+          <div class="skill-tag"><i class="fab fa-js"></i> JavaScript ES6+</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">Frameworks & Libraries</h3>
+        <div class="skill-tags">
+          <div class="skill-tag"><i class="fab fa-react"></i> React.js</div>
+          <div class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+          <div class="skill-tag"><i class="fas fa-wind"></i> Tailwind CSS</div>
+          <div class="skill-tag"><i class="fas fa-code"></i> jQuery</div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="category-title">Tools & Practices</h3>
+        <div class="skill-tags">
+          <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+          <div class="skill-tag"><i class="fab fa-github"></i> GitHub</div>
+          <div class="skill-tag"><i class="fas fa-mobile-screen"></i> Responsive Design</div>
+          <div class="skill-tag"><i class="fas fa-universal-access"></i> Accessibility</div>
+          <div class="skill-tag"><i class="fab fa-figma"></i> Figma to Code</div>
+          <div class="skill-tag"><i class="fas fa-database"></i> API Integration</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proficiency-bars">
+      <div class="prof-bar-row">
+        <div class="prof-meta"><span>HTML5 / CSS3</span><span>95%</span></div>
+        <div class="prof-track"><div class="prof-fill" data-width="95"></div></div>
+      </div>
+      <div class="prof-bar-row">
+        <div class="prof-meta"><span>JavaScript</span><span>85%</span></div>
+        <div class="prof-track"><div class="prof-fill" data-width="85"></div></div>
+      </div>
+      <div class="prof-bar-row">
+        <div class="prof-meta"><span>Bootstrap / Tailwind</span><span>90%</span></div>
+        <div class="prof-track"><div class="prof-fill" data-width="90"></div></div>
+      </div>
+      <div class="prof-bar-row">
+        <div class="prof-meta"><span>React.js</span><span>65%</span></div>
+        <div class="prof-track"><div class="prof-fill" data-width="65"></div></div>
+      </div>
+      <div class="prof-bar-row">
+        <div class="prof-meta"><span>Git & GitHub</span><span>85%</span></div>
+        <div class="prof-track"><div class="prof-fill" data-width="85"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <div class="section-label">03 / Work</div>
+    <h2 class="section-heading">Featured Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card featured-card">
+        <div class="project-img-wrap">
+          <img src="4a59dd61-b51e-41c6-bd17-2217b485ac82 - Copy.jpg" alt="Fan O Fan Business Website screenshot" loading="lazy" />
+          <div class="project-overlay">
+            <a href="https://aimanimran2508-bot.github.io/Fan-Website-New/" target="_blank" rel="noopener" class="overlay-link">
+              <i class="fas fa-external-link-alt"></i> Live
+            </a>
+            <a href="https://github.com/aimanimran2508-bot/Fan-Website-New.git" target="_blank" rel="noopener" class="overlay-link">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">01</div>
+          <h3>Fan O Fan — Business Website</h3>
+          <p>A responsive business website for a cooling solutions company with smooth navigation, service sections, and a mobile-friendly layout.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card featured-card">
+        <div class="project-img-wrap">
+          <img src="call.png" alt="California Pizza Website screenshot" loading="lazy" />
+          <div class="project-overlay">
+            <a href="https://aimanimran2508-bot.github.io/Callifornia-Pizza-Website/" target="_blank" rel="noopener" class="overlay-link">
+              <i class="fas fa-external-link-alt"></i> Live
+            </a>
+            <a href="https://github.com/aimanimran2508-bot/Callifornia-Pizza-Website.git" target="_blank" rel="noopener" class="overlay-link">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">02</div>
+          <h3>California Pizza</h3>
+          <p>A restaurant website with menu sections, promo content, and interactive UI built with a mobile-first approach.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card featured-card">
+        <div class="project-img-wrap">
+          <img src="sttt.png" alt="Starbucks Inspired Website screenshot" loading="lazy" />
+          <div class="project-overlay">
+            <a href="https://aimanimran2508-bot.github.io/Starbucks-Website-New/" target="_blank" rel="noopener" class="overlay-link">
+              <i class="fas fa-external-link-alt"></i> Live
+            </a>
+            <a href="https://github.com/aimanimran2508-bot/Starbucks-Website-New.git" target="_blank" rel="noopener" class="overlay-link">
+              <i class="fab fa-github"></i> Code
+            </a>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-number">03</div>
+          <h3>Starbucks Landing Page</h3>
+          <p>A modern landing page inspired by Starbucks, featuring scroll animations, interactive elements, and a clean visual style.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-cta">
+      <a href="https://github.com/aimanimran2508-bot" target="_blank" rel="noopener" class="btn btn-ghost">
+        <i class="fab fa-github"></i> View All on GitHub
+      </a>
+    </div>
+  </section>
+
+  <section id="process" class="section reveal">
+    <div class="section-label">04 / Process</div>
+    <h2 class="section-heading">How I work</h2>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-lightbulb"></i></div>
+        <div class="step-content">
+          <h3>Understand</h3>
+          <p>I start by understanding the goal, audience, and desired outcome before writing code.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+        <div class="step-content">
+          <h3>Design</h3>
+          <p>I plan the layout first so every visual choice supports usability and clarity.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-code"></i></div>
+        <div class="step-content">
+          <h3>Build</h3>
+          <p>I write semantic, accessible HTML and style it with clean CSS and JavaScript.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+        <div class="step-content">
+          <h3>Deliver</h3>
+          <p>I test the final result across devices and browsers to make sure it performs well.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="section reveal">
+    <div class="section-label">05 / Credentials</div>
+    <h2 class="section-heading">Certifications & Education</h2>
+
+    <div class="certs-education-grid">
+      <div class="education-col">
+        <h3 class="col-title">Education</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2022 — Present</span>
+              <h4>Bachelor of Computer Science</h4>
+              <p>Benazir Bhutto Shaheed University, Karachi</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2024 — 2025</span>
+              <h4>Front-End Development Certification</h4>
+              <p>Aptech Education — 8 Month Programme</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">2020 — 2022</span>
+              <h4>Intermediate</h4>
+              <p>St. Lawrence College, Karachi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-col">
+        <h3 class="col-title">Certificates</h3>
+        <div class="cert-cards">
+          <div class="cert-card" data-img="aptech.png">
+            <div class="cert-preview">
+              <img src="aptech.png" alt="Aptech Front-End Development Certificate" loading="lazy" />
+              <div class="cert-zoom"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="cert-meta">
+              <h4>Front-End Development</h4>
+              <p>Aptech Education · 2025</p>
+            </div>
+          </div>
+          <div class="cert-card" data-img="code.png">
+            <div class="cert-preview">
+              <img src="code.png" alt="Graphic Designing Certificate" loading="lazy" />
+              <div class="cert-zoom"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="cert-meta">
+              <h4>Graphic Designing</h4>
+              <p>Certificate of Completion</p>
+            </div>
+          </div>
+          <div class="cert-card" data-img="img77.png">
+            <div class="cert-preview">
+              <img src="img77.png" alt="Web Development Certificate" loading="lazy" />
+              <div class="cert-zoom"><i class="fas fa-expand"></i></div>
+            </div>
+            <div class="cert-meta">
+              <h4>Web Development</h4>
+              <p>Certificate of Achievement</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="certModal" class="modal" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+    <img id="modalImg" src="" alt="Certificate full view" />
+  </div>
+
+  <section id="contact" class="section reveal">
+    <div class="section-label">06 / Contact</div>
+    <h2 class="section-heading">Let's build something <em>great</em>.</h2>
+    <p class="contact-sub">Have a project, freelance idea, or collaboration in mind? I’d love to hear from you.</p>
+
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:aimanimran2508@gmail.com">aimanimran2508@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+923339267845">+92 333 926 7845</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span>Karachi, Pakistan</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/aiman-imran-28b1a228b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/aimanimran2508-bot" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/aiman_fs0/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <form id="contactForm" action="https://formspree.io/f/aimanimran2508@gmail.com" method="POST" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Sara Ahmed" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, timeline, budget — anything that helps!" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+        <p id="successMessage" role="alert" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-dot"></span>Aiman Imran
+      </div>
+      <p class="footer-tagline">Front-End Developer · Karachi, Pakistan</p>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+        <a href="#certificates">Certs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2026 Aiman Imran. Designed &amp; built with <span aria-label="love">♥</span></p>
+    </div>
+  </footer>
+
+  <button id="topBtn" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
