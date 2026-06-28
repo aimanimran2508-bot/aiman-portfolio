@@ -151,18 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (aboutSection) counterObs.observe(aboutSection);
 
-  const barObs = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      $$('.prof-fill', entry.target).forEach(bar => {
-        bar.style.width = `${bar.dataset.width || 0}%`;
-      });
-      barObs.unobserve(entry.target);
-    });
-  }, { threshold: 0.2 });
-
-  if (skillsSection) barObs.observe(skillsSection);
-
   if (modal && modalImg && modalClose) {
     const closeModal = () => {
       modal.classList.remove('open');
